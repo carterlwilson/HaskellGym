@@ -1,2 +1,5 @@
-exerciseName, Max
-"bench", 200
+personname,ename,maxlift
+"carter","bench",200
+"carter","squat",250
+"carter","deadlift",300
+"susan","bench",250

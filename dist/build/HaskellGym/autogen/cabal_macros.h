@@ -88,6 +88,50 @@
   (major1) == 2 && (major2) == 13 && (minor) <= 0)
 #endif /* MIN_VERSION_template_haskell */
 
+/* package vector-0.12.1.2 */
+#ifndef VERSION_vector
+#define VERSION_vector "0.12.1.2"
+#endif /* VERSION_vector */
+#ifndef MIN_VERSION_vector
+#define MIN_VERSION_vector(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  12 || \
+  (major1) == 0 && (major2) == 12 && (minor) <= 1)
+#endif /* MIN_VERSION_vector */
+
+/* package csv-0.1.2 */
+#ifndef VERSION_csv
+#define VERSION_csv "0.1.2"
+#endif /* VERSION_csv */
+#ifndef MIN_VERSION_csv
+#define MIN_VERSION_csv(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  1 || \
+  (major1) == 0 && (major2) == 1 && (minor) <= 2)
+#endif /* MIN_VERSION_csv */
+
+/* package bytestring-0.10.8.2 */
+#ifndef VERSION_bytestring
+#define VERSION_bytestring "0.10.8.2"
+#endif /* VERSION_bytestring */
+#ifndef MIN_VERSION_bytestring
+#define MIN_VERSION_bytestring(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  10 || \
+  (major1) == 0 && (major2) == 10 && (minor) <= 8)
+#endif /* MIN_VERSION_bytestring */
+
+/* package cassava-0.5.2.0 */
+#ifndef VERSION_cassava
+#define VERSION_cassava "0.5.2.0"
+#endif /* VERSION_cassava */
+#ifndef MIN_VERSION_cassava
+#define MIN_VERSION_cassava(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  5 || \
+  (major1) == 0 && (major2) == 5 && (minor) <= 2)
+#endif /* MIN_VERSION_cassava */
+
 /* tool alex-3.2.4 */
 #ifndef TOOL_VERSION_alex
 #define TOOL_VERSION_alex "3.2.4"
