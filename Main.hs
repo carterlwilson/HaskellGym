@@ -104,7 +104,8 @@ theMap = attrMap V.defAttr
   ]
 
 drawInstructions :: Widget FieldType
-drawInstructions = C.hCenter (str ("Enter all data and press the enter key to see your exercises. Press Esc to quit."))
+drawInstructions = C.hCenter (str ("Enter all data and press the enter key to see your exercises. Press Esc to quit." ++ "\n" ++ 
+                                    "If you enter new data and press enter again, the results will reflect it."))
 
 --instructions for how to render the entire form
 --the result body is included as a part of the form and is initiated as empty
