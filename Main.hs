@@ -103,13 +103,17 @@ theMap = attrMap V.defAttr
   , (focusedFormInputAttr, V.black `on` V.yellow)
   ]
 
+drawInstructions :: Widget FieldType
+drawInstructions = C.hCenter (str ("Enter all data and press the enter key to see your exercises. Press Esc to quit."))
+
 --instructions for how to render the entire form
 --the result body is included as a part of the form and is initiated as empty
 draw :: Form WorkoutInfo e FieldType -> [Widget FieldType]
-draw f = [C.vCenter $ C.hCenter form <=> C.hCenter (hBox body)]
+draw f = [C.vCenter $ C.hCenter instructions <=> C.hCenter form <=> C.hCenter (hBox body)]
     where
         form = B.border $ padTop (Pad 1) $ hLimit 50 $ renderForm f
         body = drawExerciseList (_exerciseList (formState f))
+        instructions = drawInstructions
 
 --sets up draw function for the app, and the event handlers
 app :: App (Form WorkoutInfo e FieldType) e FieldType
